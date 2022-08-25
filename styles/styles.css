@@ -34,6 +34,7 @@
 .list {
     list-style: none;
 }
+
 .logo,.item-nav, .header-link,.footer-link {
     text-decoration: none;
 }
@@ -42,11 +43,16 @@
     font-family: var(--main-font);
     background-color: var(--main-light-bg-cl);
     color: var(--grey-txt-cl);
+
 }
 
 /* background styles */
 .section-title, .footer {
     background-color: var(--grey-bg-cl);
+
+}
+.section-title {
+    text-align: center;
 }
 .section-team {
     background-color: var(--grey-team-bg-cl);
@@ -54,6 +60,8 @@
 .item-team{
     background-color: var(--main-light-bg-cl);
 }
+
+
 /* styles navigation */
 .logo {
     font-family: var(--secondary-font);
@@ -91,6 +99,7 @@
 {
     color: var(--accent-txt-cl);
 }
+
 /* active pages, btn */
 .current-page {
     color: var(--accent-bg-cl);
@@ -230,4 +239,55 @@
    line-height: calc(30/16);
    letter-spacing: 0.03em;    
    color: var(--grey-txt-cl);
+}
+
+
+/* Оформлення дизайн сайту */
+
+.container {
+    width: 1200px;
+    padding: 0px 15px;
+}
+.list, .main-title, .visually-hidden, 
+.title, .subtitle, .feature-content, 
+.subtitle-team, .team-content {
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.main-title {
+    padding: 195px 252px 35px 195px;
+}
+.btn {
+    padding: 10px 32px;
+}
+.section-title>.container {
+    padding-bottom: 200px;
+}
+.header .container, .container-link, .container-lin {
+    display: flex;
+}
+.logo {
+    width: 145px;
+    height: 31px;
+    margin-left: 15px;
+    margin-top: 24px;
+}
+.container-link {
+    width: 281px;
+    height: 16px;
+    margin-left: 93px;
+    margin-top: 32px;
+}
+.container-lin {
+    width: 135px;
+    height: 16px;
+    left: 344px;
+    top: 32px;
 }

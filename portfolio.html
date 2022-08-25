@@ -18,6 +18,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- modern normalise -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Styles -->
     <link rel="stylesheet" href="./styles/styles.css"/>
 </head>
@@ -25,6 +27,7 @@
 <body  class="page">
     <!-- header -->
     <header class="header">
+        <div class="container">
         <nav class="main-nav">
             <a class="logo" href="./index.html" lang="en"><span class="logo-braket-nav">Web</span>Studio</a>
             <ul class="list">
@@ -36,12 +39,13 @@
         <ul class="list">
             <li class="link"><a class="header-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li class="link"><a class="header-link" href="tel:+380961111111">+38 096 111 11 11 </a></li>
-        </ul>
-
+        </ul>            
+        </div>
     </header>
     <main class="project">
     <!-- portfolio -->
     <section class="section">
+        <div class="container">
         <h1 class="visually-hidden">Portfolio</h1>
         <ul class="list">
             <li class="btn-project"><button class="button current-btn" type="button">Усі</button></li>
@@ -53,56 +57,84 @@
         <ul class="list">
             <li class="project-link">
                 <img class="project-img" src="./images/portfolio/img-1.jpg" alt="Фото трьох усміхнених людей" width="370" height="294">
+                <div class="img-content">
                 <h2 class="subtitle-project">Технокряк</h2>
                 <p class="project-content">Веб-сайт</p>
+            </div>
+            </li>
             </li>
             <li class="project-link">
                 <img class="project-img" src="./images/portfolio/img-2.jpg" alt="хлопці грають в баскетбол" width="370" height="294">
+                <div class="img-content">
                 <h2 class="subtitle-project">Постер New Orlean vs Golden Star</h2>
                 <p class="project-content">Дизайн</p>
             </li>
             <li class="project-link">
                 <img class="project-img" src="./images/portfolio/img-3.jpg" alt="розробка додатків для ресторанів" width="370" height="294">
+                <div class="img-content">
                 <h2 class="subtitle-project">Ресторан Seafood</h2>
-                <p class="project-content">Додаток</p>
+                <p class="project-content">Додаток</p>                    
+                </div>
+
             </li>
             <li class="project-link">
                 <img class="project-img" src="./images/portfolio/img-4.jpg" alt=" чорні навушники" width="370" height="294">
+                <div class="img-content">
                 <h2 class="subtitle-project">Проєкт Prime</h2>
-                <p class="project-content">Маркетинг</p>
+                <p class="project-content">Маркетинг</p>                    
+                </div>
+
             </li>
             <li class="project-link">
                 <img class="project-img" src="./images/portfolio/img-5.jpg" alt="дві коробочки" width="370" height="294">
+                <div class="img-content">
                 <h2 class="subtitle-project">Проєкт Boxes</h2>
-                <p class="project-content">Додаток</p>
+                <p class="project-content">Додаток</p>                    
+                </div>
+
             </li>
             <li class="project-link">
                 <img class="project-img" src="./images/portfolio/img-6.jpg" alt="ввімкнений монітор" width="370" height="294">
+                <div class="img-content">
                 <h2 class="subtitle-project" lang="en">Inspiration has no Borders</h2>
-                <p class="project-content">Веб-сайт</p>
+                <p class="project-content">Веб-сайт</p>                    
+                </div>
+
             </li>
             <li class="project-link">
                 <img class="project-img" src="./images/portfolio/img-7.jpg" alt="відкрита книга" width="370" height="294">
+                <div class="img-content">
                 <h2 class="subtitle-project" lang="en">Видання Limited Edition</h2>
-                <p class="project-content">Дизайн</p>
+                <p class="project-content">Дизайн</p>                    
+                </div>
+
             </li>
             <li class="project-link">
                 <img class="project-img" src="./images/portfolio/img-8.jpg" alt="бірка для одягу" width="370" height="294">
+                <div class="img-content">
                 <h2 class="subtitle-project">Проєкт LAB</h2>
-                <p class="project-content">Маркетинг</p>
+                <p class="project-content">Маркетинг</p>                    
+                </div>
+
             </li>
             <li class="project-link">
                 <img class="project-img" src="./images/portfolio/img-9.jpg" alt="людина працює на ноутбуці" width="370" height="294">
+                <div class="img-content">
                 <h2 class="subtitle-project" lang="en">Growing Business</h2>
-                <p class="project-content">Додаток</p>
+                <p class="project-content">Додаток</p>                    
+                </div>
+
             </li>
-        </ul>
+        </ul>            
+        </div>
+
     </section>
 
  </main>
 <!-- footer -->
 <footer class="footer">
-    <a class="logo" href="./index.html" lang="en"><span class="logo-braket-nav">Web</span><span class="studio">Studio</span></a>
+   <div class="container">
+   <a class="logo" href="./index.html" lang="en"><span class="logo-braket-nav">Web</span><span class="studio">Studio</span></a>
     <address class="footer-contacts">
         <ul class="list">
             <li class="link"><a class="footer-link" href="https://goo.gl/maps/LsWouTrYtJUnjN1F6" target="_blank" rel="noopener no referrer"><span class="adres">м. Київ,
@@ -112,6 +144,8 @@
             <li class="link"><a class="footer-link" href="tel:+380961111111"><span class="foot-adress">+38 096 111 11 11</span> </a></li>
         </ul>
     </address>
+   </div> 
+
 </footer>
 </body>
 
