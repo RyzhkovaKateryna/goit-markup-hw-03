@@ -26,6 +26,7 @@
   --shadow-btn-bg-cl: 0px 4px 4px rgba(0, 0, 0, 0.15);
   --btn-bg-cl: #188CE8;
   --box-shadow: rgba(0, 0, 0, 0.15);
+  --active-btn-bg-cl: #188CE8;
 
   /* Others */
   --line-cl: #ECECEC;
@@ -38,6 +39,12 @@
 .logo,.item-nav, .header-link,.footer-link {
     text-decoration: none;
 }
+.list, .main-title, .visually-hidden, 
+.title, .subtitle, .feature-content, 
+.subtitle-team, .team-content {
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
 /* main styles for body */
 .page {
     font-family: var(--main-font);
@@ -45,15 +52,15 @@
     color: var(--grey-txt-cl);
 
 }
-
+.section-title {
+    text-align: center;
+}
 /* background styles */
 .section-title, .footer {
     background-color: var(--grey-bg-cl);
 
 }
-.section-title {
-    text-align: center;
-}
+
 .section-team {
     background-color: var(--grey-team-bg-cl);
 }
@@ -70,7 +77,7 @@
     line-height:  calc(31/26);
     letter-spacing: 0.03em;
     color: var(--black-txt-cl);
-
+    padding-right: 93px;
 }
 .logo-braket-nav {
     color: var(--accent-txt-cl);
@@ -108,6 +115,7 @@
     color: var(--light-txt-cl);
     background-color: var(--accent-bg-cl);
 }
+
 /* styles for hero */
 
 .main-title {
@@ -118,30 +126,44 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--light-txt-cl);
+    margin-bottom: 35px;
 }
+
+/* Styles for buttons */
 .btn {
-    font-family: var(--main-font);
+    font-family: var(inherit);
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30/16);
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: var(--light-txt-cl);
+    color: var(--black-txt-cl);
+    border: none;
     cursor: pointer;
-    background: var(--accent-bg-cl);
-    box-shadow: var(--shadow-btn-bg-cl);
-    border-radius: 4px;
+    border-radius: 4px;    
 }
 
-.btn, .button:hover,
-.btn, .button:focus,
-.btn, .button:active {
+.button {
+    font-family: var(inherit);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26/16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--black-txt-cl);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px var(-shadow-btn-bg-cl);
+
+}
+.btn, button:hover,
+.btn, button:focus,
+.current-btn {
     color: var(--light-txt-cl);
     background-color: var(--accent-bg-cl);
-    background: var(--btn-bg-cl);
-    box-shadow: 0px 4px 4px var(--box-shadow);
-    border-radius: 4px;
+
 }
 /* styles for features */
 
@@ -217,16 +239,7 @@
     color: var(--accent-txt-cl);
 }
 /* styles for portfolio */
-.button {
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(26/16);
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.03em;
-    cursor: pointer;
-}
+
 .subtitle-project {
     font-weight: 700;
     font-size: 18px;
@@ -242,17 +255,57 @@
 }
 
 
-/* Оформлення дизайн сайту */
+/* Оформлення контейнера */
 
 .container {
     width: 1200px;
     padding: 0px 15px;
+    margin: 0 auto;
+    display: block;
 }
-.list, .main-title, .visually-hidden, 
-.title, .subtitle, .feature-content, 
-.subtitle-team, .team-content {
-    margin: 0px 0px;
-    padding: 0px 0px;
+.main-container {
+    padding: 200px 252px;
+}
+
+/* header */
+.header-box {
+    padding: 24px 15px;
+}
+.header-box, 
+.header-list, 
+.header-list-nav, 
+.feature-list,
+.activity-list,
+.team-list {
+    display: block;
+    display: flex;
+}
+.header-list-nav {
+    width: 281px;
+    height: 16px;
+}
+
+
+/* оформлення  портфоліо */
+
+.portfolio-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding-right: 8px;
+}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.portfolio-box{
+    padding: 20px 24px;
+    border: 1px solid var(--light-icon-bg-cl);
+    border-top: 0;
+}
+.portfolio-section {
+    padding: 94px 0px
 }
 
 img {
@@ -261,33 +314,8 @@ img {
     height: auto;
 }
 
-.main-title {
-    padding: 195px 252px 35px 195px;
-}
-.btn {
-    padding: 10px 32px;
-}
-.section-title>.container {
-    padding-bottom: 200px;
-}
-.header .container, .container-link, .container-lin {
-    display: flex;
-}
-.logo {
-    width: 145px;
-    height: 31px;
-    margin-left: 15px;
-    margin-top: 24px;
-}
-.container-link {
-    width: 281px;
-    height: 16px;
-    margin-left: 93px;
-    margin-top: 32px;
-}
-.container-lin {
-    width: 135px;
-    height: 16px;
-    left: 344px;
-    top: 32px;
-}
+
+
+
+
+
